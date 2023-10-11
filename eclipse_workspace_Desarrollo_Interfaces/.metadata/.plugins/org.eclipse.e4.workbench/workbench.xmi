@@ -229,15 +229,17 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_E1rLHmIbEe6CRo1xq5L-Ww" elementId="org.eclipse.ui.editorss" selectedElement="_E1rLH2IbEe6CRo1xq5L-Ww">
-      <children xsi:type="basic:PartStack" xmi:id="_E1rLH2IbEe6CRo1xq5L-Ww" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_bMkyQGhjEe6BB5x-wU2qTw">
+      <children xsi:type="basic:PartStack" xmi:id="_E1rLH2IbEe6CRo1xq5L-Ww" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_D4bh8GeVEe6Yd_nQPYZl-A">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_D4bh8GeVEe6Yd_nQPYZl-A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="PantallaBienvenida.java" iconURI="platform:/plugin/org.eclipse.wb.core.ui/icons/gui_editor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;PantallaBienvenida.java&quot; partName=&quot;PantallaBienvenida.java&quot; title=&quot;PantallaBienvenida.java&quot; tooltip=&quot;Ejercicios_practicos_tema_1/src/ej14/PantallaBienvenida.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Ejercicios_practicos_tema_1/src/ej14/PantallaBienvenida.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;895&quot; selectionTopPixel=&quot;242&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;PantallaBienvenida.java&quot; partName=&quot;PantallaBienvenida.java&quot; title=&quot;PantallaBienvenida.java&quot; tooltip=&quot;Ejercicios_practicos_tema_1/src/ej14/PantallaBienvenida.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Ejercicios_practicos_tema_1/src/ej14/PantallaBienvenida.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;895&quot; selectionTopPixel=&quot;123&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.wb.core.guiEditor</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_NOfLAGeYEe6Yd_nQPYZl-A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="App.java" iconURI="platform:/plugin/org.eclipse.wb.core.ui/icons/gui_editor.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;App.java&quot; partName=&quot;App.java&quot; title=&quot;App.java&quot; tooltip=&quot;Ejercicios_practicos_tema_1/src/ej14/App.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Ejercicios_practicos_tema_1/src/ej14/App.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;595&quot; selectionTopPixel=&quot;1373&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -250,14 +252,6 @@
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_bMkyQGhjEe6BB5x-wU2qTw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="hola.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;hola.java&quot; partName=&quot;hola.java&quot; title=&quot;hola.java&quot; tooltip=&quot;Proyecto1/src/estoSeVeGithub/hola.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Proyecto1/src/estoSeVeGithub/hola.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;111&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -430,7 +424,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_E1rMFGIbEe6CRo1xq5L-Ww" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_vpPqwGhjEe6Omr-AwSze2Q" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_E1tl4mIbEe6CRo1xq5L-Ww"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Beq0MGhkEe6QdfcWI_9fsg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_E1tl4mIbEe6CRo1xq5L-Ww"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_E1rMImIbEe6CRo1xq5L-Ww" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -452,7 +446,7 @@
       <children xsi:type="menu:ToolBar" xmi:id="_E1rwcGIbEe6CRo1xq5L-Ww" elementId="org.eclipse.search.searchActionSet">
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_E1rwdWIbEe6CRo1xq5L-Ww" elementId="org.eclipse.ui.edit.text.actionSet.presentation">
+      <children xsi:type="menu:ToolBar" xmi:id="_E1rwdWIbEe6CRo1xq5L-Ww" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_E1rweGIbEe6CRo1xq5L-Ww" elementId="group.nav" toBeRendered="false">
@@ -461,7 +455,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_E1rwemIbEe6CRo1xq5L-Ww" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_vpRf8GhjEe6Omr-AwSze2Q" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_E1tBrGIbEe6CRo1xq5L-Ww"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_BespYGhkEe6QdfcWI_9fsg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_E1tBrGIbEe6CRo1xq5L-Ww"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_E1rwhmIbEe6CRo1xq5L-Ww" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
