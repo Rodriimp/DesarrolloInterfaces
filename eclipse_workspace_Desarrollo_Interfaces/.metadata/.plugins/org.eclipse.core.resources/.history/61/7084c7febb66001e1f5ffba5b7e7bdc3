@@ -1,0 +1,10 @@
+package ejemploPantallas;
+
+public class Pantalla2View extends View{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8437911984822461892L;
+
+}

@@ -1,0 +1,148 @@
+package ej14;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import javax.swing.KeyStroke;
+import java.awt.event.KeyEvent;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.InputEvent;
+
+public class App {
+
+	private JFrame frame;
+	private Pantalla1View pantalla1;
+	private Pantalla2View pantalla2;
+	private Pantalla3View pantalla3;
+	private View pantallaActual;
+	private PantallaBienvenida pBienvenida;
+
+	public View getPantallaActual() {
+		return pantallaActual;
+	}
+
+	public void setPantallaActual(View pantallaActual) {
+		this.pantallaActual = pantallaActual;
+	}
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					App window = new App();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public App() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		pantalla1 = new Pantalla1View(this);
+		pantalla2 = new Pantalla2View(this);
+		pantalla3 = new Pantalla3View(this);
+		pBienvenida = new PantallaBienvenida(this);
+
+		JMenuBar menuBar = new JMenuBar();
+		frame.setJMenuBar(menuBar);
+
+		JMenu mnNavegar = new JMenu("Navegar");
+		menuBar.add(mnNavegar);
+
+		JMenuItem mntmIrP1 = new JMenuItem("Ir a Pantalla 1");
+		mntmIrP1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_1, InputEvent.CTRL_DOWN_MASK));
+		mnNavegar.add(mntmIrP1);
+		mntmIrP1.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				irAPantalla1("");
+			}
+		});
+
+		JMenuItem mntmIrP2 = new JMenuItem("Ir a Pantalla 2");
+		mntmIrP2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_2, InputEvent.CTRL_DOWN_MASK));
+		mnNavegar.add(mntmIrP2);
+		mntmIrP2.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				irAPantalla2("");
+			}
+		});
+
+		JMenuItem mntmIrP3 = new JMenuItem("Ir a Pantalla 3");
+		mntmIrP3.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_3, InputEvent.CTRL_DOWN_MASK));
+		mnNavegar.add(mntmIrP3);
+		mntmIrP3.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				irAPantalla3("");
+			}
+		});
+
+		JMenu mnSalir = new JMenu("Salir");
+		menuBar.add(mnSalir);
+
+		JMenuItem mntmSalirApp = new JMenuItem("Salir de la app");
+		mntmSalirApp.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_DOWN_MASK));
+		mnSalir.add(mntmSalirApp);
+		mntmSalirApp.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+
+		irAPBienvenida();
+		menuBar.setEnabled(false);
+	}
+
+	public void irAPantalla1(String textoPrevio) {
+
+		frame.setContentPane(pantalla1);
+		pantalla1.cambiarTexto(textoPrevio);
+		frame.revalidate();
+	}
+
+	public void irAPantalla2(String textoPrevio) {
+		frame.setContentPane(pantalla2);
+		pantalla2.cambiarTexto(textoPrevio);
+		frame.revalidate();
+	}
+
+	public void irAPantalla3(String textoPrevio) {
+		frame.setContentPane(pantalla3);
+		pantalla3.cambiarTexto(textoPrevio);
+		frame.revalidate();
+	}
+
+	public void irAPBienvenida() {
+		frame.setContentPane(pBienvenida);
+		frame.revalidate();
+	}
+}

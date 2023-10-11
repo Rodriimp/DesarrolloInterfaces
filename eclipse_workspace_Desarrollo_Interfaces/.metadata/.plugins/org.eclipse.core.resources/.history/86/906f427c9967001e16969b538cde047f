@@ -1,0 +1,39 @@
+package ej14;
+
+import javax.swing.JLabel;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class PantallaBienvenida extends View {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7049195173385890712L;
+
+	public PantallaBienvenida(App appControler) {
+		super(appControler);
+		setLayout(null);
+
+		JLabel lblNewLabel = new JLabel("BIENVENIDO A MI APLICACIÓN");
+		lblNewLabel.setBounds(140, 57, 156, 14);
+		add(lblNewLabel);
+
+		JButton btnEntrar = new JButton("Entrar");
+		btnEntrar.setBounds(166, 146, 89, 23);
+		add(btnEntrar);
+
+		btnEntrar.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JFrame f = new JFrame();
+
+			}
+		});
+	}
+}

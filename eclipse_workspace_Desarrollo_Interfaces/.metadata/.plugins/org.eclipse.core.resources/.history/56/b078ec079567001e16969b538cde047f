@@ -1,0 +1,5 @@
+package ej14;
+
+public class PantallaBienvenida extends view {
+
+}

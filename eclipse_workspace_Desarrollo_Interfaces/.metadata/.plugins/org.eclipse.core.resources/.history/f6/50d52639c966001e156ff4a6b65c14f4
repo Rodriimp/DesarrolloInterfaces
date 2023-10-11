@@ -1,0 +1,15 @@
+package ej12;
+
+public class Pantalla1View extends View{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6532324810226796712L;
+
+	public Pantalla1View(App appControler) {
+		super(appControler);
+
+	}
+
+}

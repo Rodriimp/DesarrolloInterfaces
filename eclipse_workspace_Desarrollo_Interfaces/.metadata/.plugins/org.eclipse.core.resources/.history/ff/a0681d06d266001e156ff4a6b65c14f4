@@ -1,0 +1,29 @@
+package ej12;
+
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public abstract class View extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8642167290613960373L;
+
+	protected App appController;
+
+	public View(App appControler) {
+		this.appController = appControler;
+	}
+
+	public void cambiarTextfield(JTextField t) {
+		View v = appController.getPantallaActual();
+		Pantalla1View p1 = new Pantalla1View(appController);
+		Pantalla1View p2 = new Pantalla1View(appController);
+		Pantalla1View p3 = new Pantalla1View(appController);
+
+		if (v == p1) {
+			p1.getTextField().setText(t.getText());
+		}
+
+	}
+}

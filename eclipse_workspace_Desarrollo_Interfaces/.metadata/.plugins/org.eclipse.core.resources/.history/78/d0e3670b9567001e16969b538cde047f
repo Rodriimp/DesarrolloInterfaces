@@ -1,0 +1,9 @@
+package ej14;
+
+public class PantallaBienvenida extends View {
+
+	public PantallaBienvenida(App appControler) {
+		super(appControler);
+	}
+
+}

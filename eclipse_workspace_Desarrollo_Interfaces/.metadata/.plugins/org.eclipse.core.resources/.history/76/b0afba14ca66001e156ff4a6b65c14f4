@@ -1,0 +1,37 @@
+package ej12;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+
+public class Pantalla1View extends View{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6532324810226796712L;
+	private JTextField textField;
+	
+
+	public Pantalla1View(App appControler) {
+		super(appControler);
+		setLayout(null);
+		
+		textField = new JTextField();
+		textField.setBounds(164, 37, 99, 20);
+		add(textField);
+		textField.setColumns(10);
+		
+		JButton btnNewButton = new JButton("Ir a Pantalla 1");
+		btnNewButton.setBounds(31, 105, 99, 23);
+		add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("Ir a Pantalla 2");
+		btnNewButton_1.setBounds(164, 105, 99, 23);
+		add(btnNewButton_1);
+		
+		JButton btnNewButton_2 = new JButton("Ir a Pantalla 3");
+		btnNewButton_2.setBounds(297, 105, 99, 23);
+		add(btnNewButton_2);
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package ej14;
+
+public class PantallaBienvenida extends View {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7049195173385890712L;
+
+	public PantallaBienvenida(App appControler) {
+		super(appControler);
+	}
+
+}

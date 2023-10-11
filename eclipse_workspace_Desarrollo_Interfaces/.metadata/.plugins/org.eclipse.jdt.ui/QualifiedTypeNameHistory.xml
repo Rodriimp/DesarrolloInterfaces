@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="ejemploPantallas.Pantalla1View"/>
+    <fullyQualifiedTypeName name="ejemploPantallas.Pantalla2View"/>
+    <fullyQualifiedTypeName name="ejemploPantallas.Pantalla3View"/>
+    <fullyQualifiedTypeName name="ejemploPantallas.View"/>
+    <fullyQualifiedTypeName name="ejemploPantallas.App"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+    <fullyQualifiedTypeName name="javax.sound.midi.VoiceStatus"/>
+    <fullyQualifiedTypeName name="ej12.Pantalla3View"/>
+    <fullyQualifiedTypeName name="ej12.View"/>
+    <fullyQualifiedTypeName name="ej12.Pantalla1View"/>
+    <fullyQualifiedTypeName name="javax.swing.JTextField"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="ej14.PantallaBienvenida"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.awt.Frame"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="ej14.App"/>
+    <fullyQualifiedTypeName name="javax.swing.JMenuBar"/>
+    <fullyQualifiedTypeName name="java.awt.Menu"/>
+</qualifiedTypeNameHistroy>
