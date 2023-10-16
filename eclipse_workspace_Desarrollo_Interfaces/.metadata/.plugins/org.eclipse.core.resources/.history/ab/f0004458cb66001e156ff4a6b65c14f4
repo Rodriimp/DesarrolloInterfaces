@@ -1,9 +1,0 @@
-package ej12;
-
-public class Pantalla3View extends View{
-
-	public Pantalla3View(App appControler) {
-		super(appControler);
-	}
-
-}

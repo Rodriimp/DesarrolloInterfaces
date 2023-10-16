@@ -1,0 +1,116 @@
+package ej16;
+
+import java.awt.EventQueue;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+
+public class App {
+
+	private JFrame frame;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTable table;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					App window = new App();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public App() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(700, 300, 750, 600);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+
+		textField_1 = new JTextField();
+		textField_1.setBounds(86, 26, 270, 20);
+		frame.getContentPane().add(textField_1);
+		textField_1.setColumns(10);
+
+		textField_1.addKeyListener(new KeyListener() {
+
+			@Override
+			public void keyTyped(KeyEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void keyReleased(KeyEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void keyPressed(KeyEvent e) {
+				int key = e.getKeyCode();
+
+				if (key == KeyEvent.VK_ENTER && textField_1.getText().isEmpty()) {
+					e.getComponent().transferFocus();
+				}
+			}
+		});
+
+		textField_2 = new JTextField();
+		textField_2.setBounds(375, 26, 270, 20);
+		frame.getContentPane().add(textField_2);
+		textField_2.setColumns(10);
+
+		textField_2.addKeyListener(new KeyListener() {
+
+			@Override
+			public void keyTyped(KeyEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void keyReleased(KeyEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void keyPressed(KeyEvent e) {
+				int key = e.getKeyCode();
+
+				if (!textField_2.getText().isEmpty() && key == KeyEvent.VK_ENTER) {
+
+				}
+			}
+		});
+
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(86, 57, 559, 452);
+		frame.getContentPane().add(scrollPane);
+
+		table = new JTable();
+		scrollPane.setViewportView(table);
+	}
+}

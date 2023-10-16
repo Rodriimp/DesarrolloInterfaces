@@ -6,8 +6,8 @@ import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.KeyStroke;
-
 
 import java.awt.event.KeyEvent;
 import java.awt.event.ActionEvent;
@@ -58,7 +58,7 @@ public class App {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(700, 300, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		pantalla1 = new Pantalla1View(this);
@@ -114,7 +114,7 @@ public class App {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.exit(0);
+				salir(); 
 			}
 		});
 		irAPantalla1("");
@@ -139,5 +139,13 @@ public class App {
 		frame.revalidate();
 	}
 
-	
+	public void salir() {
+		Integer opcion = JOptionPane.showConfirmDialog(frame, "¿Seguro que desea salir?", "SALIR",
+				JOptionPane.YES_NO_CANCEL_OPTION);
+		if (opcion == 0) {
+			System.exit(0);
+
+		}
+	}
+
 }

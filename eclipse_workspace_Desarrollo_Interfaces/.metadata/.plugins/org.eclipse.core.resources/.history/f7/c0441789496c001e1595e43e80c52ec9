@@ -1,0 +1,27 @@
+package ej16;
+
+import javax.swing.table.AbstractTableModel;
+
+public class TableModel extends AbstractTableModel {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4980315035705029924L;
+
+	@Override
+	public int getRowCount() {
+		return 0;
+	}
+
+	@Override
+	public int getColumnCount() {
+		return 0;
+	}
+
+	@Override
+	public Object getValueAt(int rowIndex, int columnIndex) {
+		return null;
+	}
+
+}
