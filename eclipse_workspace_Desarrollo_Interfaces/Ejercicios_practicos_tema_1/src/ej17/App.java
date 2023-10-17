@@ -1,12 +1,23 @@
 package ej17;
 
 import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.List;
 
 import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JButton;
+import javax.swing.JTable;
+
+import ej01.modelo.Pelicula;
+import ej01.services.PeliculasServiceException;
+import ej01.services.PeliculasServices;
 
 public class App {
 
 	private JFrame frame;
+	private JTable table;
 
 	/**
 	 * Launch the application.
@@ -36,8 +47,38 @@ public class App {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(700, 300, 750, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	}
+		frame.getContentPane().setLayout(null);
 
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(64, 60, 603, 448);
+		frame.getContentPane().add(scrollPane);
+
+		table = new JTable();
+		scrollPane.setViewportView(table);
+		TableModel model = new TableModel();
+		table.setModel(model);
+
+		JButton btnConsultar = new JButton("CONSULTAR");
+		btnConsultar.setBounds(315, 26, 108, 23);
+		frame.getContentPane().add(btnConsultar);
+		
+
+		btnConsultar.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				PeliculasServices pService = new PeliculasServices();
+				try {
+					model.setPeliculas(pService.getPeliculasMenor100min());
+					model.fireTableDataChanged();
+
+				} catch (PeliculasServiceException e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
+
+	}
 }
